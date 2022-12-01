@@ -1,10 +1,12 @@
+
 package com.mystore.dao;
 import com.mystore.model.Product;
 
 public class ProductDAO 
 {
+	Product productArr[]=new Product[3];
 	
-	public static  void addProduct(Product product) 
+	public static void addProduct(Product product) 
 	{
 		Product productArr[]=new Product[3];
 		for (int  i = 0;i<productArr.length;i++) 
@@ -18,23 +20,24 @@ public class ProductDAO
 	} 
 				public Product[] getAllProduct()
 				{
-					Product productArr[]=new Product[3];
 					return productArr;
 				}
 
-			public int[] getProductByNameStartWith(String pName)
+			public Product[] getProductByNameStartWith(String pName)
 			{
-				int[] prodArray = new int[3];
-				Product sc= new Product();
-				sc.getProductName();
-				char firstLetter = 'A';
-				if (pName.charAt(0) ==firstLetter)			//returns the character at the specified index in a string.
+				
+				Product productArr[]=new Product[3];
+				String set= "A";
+				for (int  i = 0;i<productArr.length;i++) 
+				{
+				if (pName.startsWith(set))			//returns the character at the specified index in a string.
 			      {
 					
 			      }
-				return prodArray;	
+					
 			}
-			
+				return productArr;
+			}	
 			
 			}
 
