@@ -32,25 +32,25 @@ public class ProductDAO {
 	{
 		int num = ID;
 		//String s = new String();
-		for(Product p1 : list )
+		for(Product pobj : list )
 		{
-			if(p1.getProductId()==num)
+			if(pobj.getProductId()==num)
 			{
 				System.out.println("The Product Details are :");
-				System.out.println("The Product ID is :"+p1.getProductId()); 
-				System.out.println("The Product Name is :"+ p1.getProductName()); 
-				System.out.println("The Product Price is :"+ p1.getProductPrice());
+				System.out.println("The Product ID is :"+pobj.getProductId()); 
+				System.out.println("The Product Name is :"+ pobj.getProductName()); 
+				System.out.println("The Product Price is :"+ pobj.getProductPrice());
 			}
 		}
 	}
 	
 	public void deleteProductByID(int ID)
 	{
-		for(Product p1 : list)
+		for(Product pobj2 : list)
 		{
-			if(p1.getProductId()==ID)
+			if(pobj2.getProductId()==ID)
 			{
-				list.remove(p1);
+				list.remove(pobj2);
 			}
 		}
 	}
