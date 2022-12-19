@@ -31,7 +31,7 @@ public class ProductDAO {
 	public void searchProductByID(int ID)
 	{
 		int num = ID;
-		//String s = new String();
+		
 		for(Product pobj : list )
 		{
 			if(pobj.getProductId()==num)
