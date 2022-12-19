@@ -13,7 +13,7 @@ public class Student_Course_View {
 		
 		Student Sr = null;
 		Cource Cu = null;
-		for(int i=1;i<=5;i++) {
+		for(int i=1;i<=2;i++) {
 			serviceGives.addStudentCourseDetails(Sr, Cu);
 			System.out.println("Enter Student Id:");
 			int id=sc.nextInt();
