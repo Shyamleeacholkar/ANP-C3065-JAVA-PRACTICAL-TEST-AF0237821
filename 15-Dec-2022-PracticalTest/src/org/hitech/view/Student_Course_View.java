@@ -27,6 +27,7 @@ public class Student_Course_View {
 			System.out.println("Enter Student courseName:");
 			String course=sc.next();
 			sc.nextLine();
+			
 		}
 		
 	}
