@@ -1,4 +1,4 @@
-//Write a Program to print any multiplication table. 
+//WAP to print any multiplication table.use exception handling and call Thread.Sleep method
 
 package java.example1;
 
